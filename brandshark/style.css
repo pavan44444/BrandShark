@@ -1,0 +1,764 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.bar{
+    margin-top: 30px;
+    display: none;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.bar div{
+    border: 1px solid skyblue;
+    width: 17px;
+    margin: 4px;
+    
+}
+/*styling the header*/
+header{
+    overflow-x: hidden;
+    display: flex;
+  background-color: white;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0%;
+    justify-content: space-between;
+
+}
+header .logo{
+    padding: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    display: block;
+    padding: 18px;
+}
+
+
+.main .img1{
+    position: static;
+    float: right;
+    top: 0%;
+    right: 0%;
+    
+}
+.img1 img{
+    width: 200px;
+    height: 300px;
+}
+.about-heading{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+   position: static;
+    z-index: 1;
+   
+}
+
+.about-heading p{
+    border: 2px solid rgb(14, 14, 118);
+    height: 20px;
+  
+    
+ 
+}
+.about-heading p,h1{
+    margin: 5px;
+    color: rgb(14, 14, 118);
+}
+.about-content p{
+    padding: 25px;
+    max-width: 600px;
+    line-height: 30px;
+    color: rgb(14, 14, 118);
+  
+   
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    margin-left: -20px;
+}
+
+.nav-links button{
+    padding: 10px;
+    background-color: rgb(8, 8, 66);
+    color: white;
+    font-weight: 700;
+}
+.nav-links a{
+    text-decoration: none;
+    display: block;
+    padding: 25px;
+}
+.services ul{
+    display: none;
+    
+}
+
+button.learn-more{
+   position: static;
+   background-color: yellow;
+   border: 0;
+   outline: 0;
+   padding: 20px;
+   color: rgb(14, 14, 118);
+   margin-left: 70px;
+  
+}
+@media screen and (max-width:970px){
+   main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+   }
+   .nav-links{
+    display: none;
+   }
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+  .services-flex-1{
+  display: flex;
+  flex-direction: column;
+ 
+  flex-wrap: wrap;
+  
+  justify-content: center;
+   
+    
+  }
+ .why-to-choose{
+    flex-direction: column;
+    align-items: center;
+ }
+  .services-card-1{
+    margin-top: 20px;
+    
+  }
+  
+ .footer-1 {
+    flex-direction: column;
+    align-items: center;
+ }
+
+  .services-card-1 h4{
+    margin-top: -20px;
+  }
+ 
+  .services-card-2 h4{
+    margin-top: -20px;
+  }
+   
+  .services-flex-2{
+    display: flex;
+    flex-direction: column;
+   
+    flex-wrap: wrap;
+    
+    justify-content: center;
+     
+      
+    }
+   .contact-details{
+    padding: 20px;
+   }
+    .services-card-2{
+      margin-top: 20px;
+    }
+.our-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+  .ankur-sharma{
+    width: 300px;
+
+   
+  }
+  .bar{
+    display: block;
+  }
+  .shekhar-suman{
+    margin-top: 20px;
+    width: 300px;
+  }
+  .testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .insights{
+    flex-direction: column;
+  }
+  .contact img{
+    display: none;
+  }
+  .services-offered{
+  flex-direction: column;
+  align-items: center;
+  }
+  .services-offered a{
+    display: block;
+  }
+  .services-offered div{
+    margin-top: 20px;
+  }
+
+}
+.about-company{
+position: static;
+    
+    width: 500px;
+    margin: 70px;
+}
+
+fieldset img{
+
+    margin: 20px;
+    width: 150px;
+}
+.moto{
+    float: right;
+    padding: 10px;
+}
+.companies-we-work-with{
+   
+   display:inline-block;
+position: static;
+   overflow: hidden;
+   height: 280px;
+   background-color: rgb(232, 223, 223);
+   width: 100%;
+   align-items: center;
+   white-space: nowrap;
+   
+   
+}
+
+
+.companies-we-work-with img{
+    animation: anim 2s infinite linear;
+    padding: 20px;
+    position: static;
+    z-index: -2;
+    
+  
+}
+.clients-we-work-with h1{
+    color: rgb(14, 14, 49);
+    font-weight:3px;
+}
+
+
+@keyframes anim {
+    
+   from{
+  
+    transform: translateX(0);
+ 
+   }
+
+    to{
+        
+      
+        transform: translateX(-100%);
+        
+    }
+}
+.services{
+    margin-top: 30px;
+}
+.services-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-flex-1{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 80px;
+}
+.services-flex-1 img{
+    width: 300px;
+    margin-left: 20px;
+}
+.services-flex-1 .services-card-1{
+    background-origin: 1px solid black;
+    
+   box-shadow: 2px 2px 1px 2px rgb(202, 185, 185);
+    display: flex;
+    max-width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-card-1 img{
+    width: 50px;
+    
+    border-radius: 30%;
+    height: 40px;
+    margin-top: 90px;
+    
+    
+}
+
+.services-card-1 h4{
+    color: rgb(9, 9, 111);
+}
+
+.services-card-1 p{
+    margin-top: -60px;
+    padding: 30px;
+}
+.services-card-1:hover{
+    background-color: rgb(2, 2, 73);
+}
+.services-card-1:hover h4{
+    color: yellow;
+}
+.services-card-1:hover p{
+    color: white;
+}
+.services-card-1 p.read-more{
+    border: 0;
+    outline: 0;
+    color: blue;
+
+}
+.services-card-1:hover .read-more{
+    color: yellow;
+}
+.services-flex-2{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 80px;
+}
+.services-flex-2 img{
+    width: 300px;
+    margin-left: 20px;
+}
+.services-flex-2 .services-card-2{
+    background-origin: 1px solid black;
+    
+    box-shadow: 2px 2px 1px 2px rgb(202, 185, 185);
+    display: flex;
+    max-width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-card-2 img{
+    width: 50px;
+    
+    border-radius: 30%;
+    height: 40px;
+    margin-top: 90px;
+    
+    
+}
+
+.services-card-2 h4{
+    color: rgb(9, 9, 111);
+}
+
+.services-card-2 p{
+    margin-top: -60px;
+    padding: 30px;
+}
+.services-card-2:hover{
+    background-color: rgb(2, 2, 73);
+}
+.services-card-2:hover h4{
+    color: yellow;
+}
+.services-card-2:hover p{
+    color: white;
+}
+.services-card-2 p.read-more{
+    border: 0;
+    outline: 0;
+    color: blue;
+
+}
+.services-card-2:hover .read-more{
+    color: yellow;
+}
+.why-to-choose{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+
+}
+.why-to-choose img{
+    width: 300px;
+    height: 400px;
+    
+}
+.why-to-choose .about-us{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    color: rgb(8, 8, 75);
+}
+button.discover{
+    padding: 20px;
+    background-color: yellow;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    width: 220px;
+    margin-top: 20px;
+}
+.why-to-choose p{
+    line-height: 2;
+}
+.our-team{
+    display: flex;
+  justify-content: center;
+    
+}
+.ankur-sharma{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+.ankur-sharma img{
+    width: 160px;
+    height: 160px;
+    background-color: rgb(204, 191, 191);
+    border-radius: 50%;
+    
+}
+.shekhar-suman{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+   
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+.shekhar-suman img{
+    width: 160px;
+    height: 160px;
+    background-color: rgb(204, 191, 191);
+    border-radius: 50%;
+    
+}
+.our-team{
+    margin: auto;
+    text-align: center;
+    color: rgb(8, 8, 75);
+}
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial-1{
+    max-width: 300px;
+    background-color: rgb(245, 238, 238);
+    margin: 40px;
+    padding: 10px;
+}
+.testimonial-1 h3{
+    color: blue;
+}
+.testimonial-2{
+    max-width: 300px;
+    background-color: rgb(245, 238, 238);
+    margin: 40px;
+    padding: 10px;
+}
+.testimonial-2 h3{
+    color: rgb(53, 183, 53);
+}
+.testimonial-3{
+    max-width: 300px;
+    padding: 10px;
+    margin: 40px;
+    background-color: rgb(245, 238, 238);
+}
+
+.testimonial-3 h3{
+    color: rgb(168, 17, 17);
+
+}
+.stars{
+    display: flex;
+}
+.stars p{
+    color: rgb(192, 165, 14);
+}
+.review{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+}
+.review *{
+    margin-top: 10px;
+}
+.review h3{
+    color: rgb(2, 2, 73);
+}
+.review button{
+    width: 400px;
+    font-weight: 800;
+    cursor: pointer;
+    height: 70px;
+    color: yellow;
+    border: 0;
+    padding-bottom: 7px;
+    background-color: rgb(2, 2, 73);
+}
+.review button img{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.blog{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.insights{
+    display: flex;
+}
+.insights div{
+    height: 400px;
+    width: 400px;
+   
+    margin: 20px;
+   
+
+}
+.insights div:hover .blog-read-more{
+    background-color: rgb(1, 1, 50);
+    color: white;
+}
+
+.blog h3{
+    color: rgb(2, 2, 73);
+    letter-spacing: 3px;
+}
+.blog h2{
+    color: rgb(2, 2, 73);
+}
+.insights button.blog-button{
+    border: 0;
+    background-color: rgb(2, 2, 52);
+    color: white;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.insights button.digital{
+    border: 0;
+    background-color: rgb(2, 2, 52);
+    color: white;
+    padding: 5px;
+}
+.insights .travel h3{
+    letter-spacing: 0;
+    color: black;
+    padding: 10px;
+}
+.insights .real-estate h3{
+    letter-spacing: 0;
+    color: black;
+    padding: 10px;
+   
+}
+
+.insights .paid-search h3{
+    letter-spacing: 0;
+    color: black;
+    padding: 10px;
+}
+.insights button.blog-read-more{
+    
+    width: 90%;
+    margin: 20px;
+    padding: 15px;
+}
+.view-all{
+    display: flex;
+    align-items: center;
+justify-content: center;
+
+}
+.view-all button{
+    padding: 10px;
+    width: 220px;
+    background-color: yellow;
+    border: 0;
+    outline:0 ;
+
+}
+.contact-background{
+    height: 500px;
+    background-color: rgb(255, 255, 82);
+    margin-top: 30px;
+    width: 100%;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+  margin-top: 30px;
+   
+}
+.contact .img img{
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 450px;
+}
+.contact .contact-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.contact .contact-details h3{
+    color: rgb(11, 11, 97);
+    font-size: 30px;
+}
+.contact .contact-details p{
+    padding: 20px;
+}
+form input{
+    padding: 10px;
+    border: 0;
+    outline: 0;
+}
+form textarea{
+    margin-top: 20px;
+    border: 0;
+}
+
+button.contact-us{
+        width: 150px;
+        padding: 10px;
+        background-color: transparent;
+        
+        float: right;
+}
+button.contact-us:hover{
+    background-color: rgb(5, 5, 95);
+    color: yellow;
+    font-weight: 700;
+}
+footer{
+    background-color: rgb(9, 9, 82);
+    margin-top: -20px;
+}
+
+
+.footer-1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-1 div{
+    width: 400px;
+    margin-top: 20px;
+   
+    height: 400px;
+}
+.footer-1 .quicklinks ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.contact ul{
+    display: block;
+    margin-top: 30px;
+    margin-left: 40px;
+    list-style-type: none;
+}
+.footer-1 ul a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+
+}
+.footer-1 h1{
+    color: white;
+    font-size: 60px;
+}
+.footer-1 h2{
+    color: yellow;
+}
+.footer-1 p{
+    line-height: 2;
+    color: white;
+    padding: 20px;
+}
+.line{
+    border: 1px solid white;
+    width: 100%;
+
+}
+.services-offered{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.services-offered h2{
+    color: yellow;
+    margin-bottom: 20px;
+}
+.services-offered a{
+    text-decoration: none;
+    color: white;
+    line-height: 4;
+}
+.services-offered div{
+    max-width: 300px;
+    margin: 10px;
+}
+.copyright{
+    background-color: rgb(2, 2, 27);
+    color: white;
+    margin: auto;
+    text-align: center;
+    height: 40px;
+    
+}
+.social-media span{
+    margin: 8px;
+    cursor: pointer;
+    color: white;
+}
